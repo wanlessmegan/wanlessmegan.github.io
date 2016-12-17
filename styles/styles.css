@@ -1,0 +1,695 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.wrapper {
+	max-width: 1208px;
+	margin: 0 auto;
+}
+
+.wrapper p {
+	padding: 0;
+}
+
+.wrapper h2 {
+	margin-bottom: 20px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.flexContainer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.flexContainer li {
+	list-style-type: none;
+	padding: 0 15px 0 15px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+li {
+	list-style-type: none;
+	text-transform: uppercase;
+	transition: border-bottom 2s ease-in 5;
+	transition-duration: 1s;
+}
+
+a {
+	text-decoration: none;
+	color: white
+}
+
+li:hover {
+	text-shadow: 0 0 3px white;
+	animation: 2s ease-in-out;
+
+}
+
+.homeHeader {
+	background-image: url(../images/rocks_on_the_beach.jpg);
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+/*	padding-top: 30px;*/
+	padding-bottom: 100px;
+}
+
+.headerCenter {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 100px;
+	font-size: 14px;
+}
+
+
+.headerCenter p {
+	font-size: 28px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+	color: white;
+	margin: 0 auto;
+	font-family: 'Homemade Apple', cursive; 
+	padding-right: 30px;
+/*	background:rgba(255,255,255,0.5);
+	width: 70%;*/
+}
+
+.headerCenter h1, .banner h1 {
+	font-size: 62px;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+	color: white;
+}
+
+.headerCenter img {
+	width: 300px;
+}
+
+.headerCTA {
+	background-color: white;
+	width: 250px;
+	margin: 0 auto;
+	border-radius: 15px;
+	transition: background-color 2s;
+}
+
+.headerCTA h3 {
+	text-align: center;
+	color: black;
+	font-size: 28px;
+	padding: 5px;
+	text-shadow: none;
+
+}
+
+.headerCTA:hover {
+	background-color: #ffd905;
+	color: white;
+}
+
+.headerCTA2 {
+	background-color: #d97769;
+	color: white;
+	width: 250px;
+	margin: 0 auto;
+	border-radius: 15px;
+	transition: all 1s;
+
+}
+
+.headerCTA2 h3{
+	text-align: center;
+	color: white;
+	font-size: 28px;
+	padding: 5px;
+}
+
+.headerCTA2:hover {
+	background-color: #717f82;
+	color: black;
+}
+
+
+nav {
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	position: fixed;
+	width: 100%;
+	background:rgba(1,1,1,0.5);;
+	z-index: 1;
+	margin-top: -10px;
+}
+
+.section {
+/*	padding: 30px;*/
+}
+
+section .section {
+	margin-left: 0;
+	margin-right:0;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.section .bottom {
+	padding-bottom: 0;
+
+}
+
+.section p {
+	color: black;
+	text-shadow: none;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+
+.section h2 {
+	font-size: 48px;
+	text-align: center;
+	margin-bottom: 0;
+	padding-top: 0;
+
+}
+
+.compass {
+	display: block;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.section .compass {
+	width: 50px;
+}
+
+
+.flexContainer2 {
+	display: flex;
+}
+
+.inspiration {
+	background-image: url(../images/Cabins.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	width: 100%;
+	padding-top: 50px;
+}
+
+.aside {
+	margin-left: 10px;
+	text-align: left;
+	color: white;
+	font-family: 'Homemade Apple', cursive;
+	font-size: 28px;
+
+}
+
+
+.aside h1, p {
+	text-shadow: 2px 2px 4px #000000;
+	text-transform: none;
+	padding: 30px;
+	padding-left: 85px;
+}
+
+.inspiration2 {
+	background-image: url(../images/agawa-rock.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	width: 100%;
+	padding-top: 50px;
+}
+
+
+.aside2 {
+	margin-left: 10px;
+	text-align: right;
+	color: white;
+	font-family: 'Homemade Apple', cursive;
+	font-size: 28px;
+
+}
+
+.aside2 h1, p {
+	text-shadow: 2px 2px 4px #000000;
+	text-transform: none;
+	text-align: right;
+	padding: 30px;
+	padding-right: 85px;
+}
+
+
+aside {
+	display: flex;
+	align-items: stretch;
+}
+
+iframe {
+/*	margin-left: 20px;*/
+
+}
+
+
+.contentHalf {
+	width: 80%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 40px;
+
+}
+
+
+.video {
+	padding-top: 40px;
+	margin-left: 40px ;
+}
+
+.exploreContainer {
+	display: flex;
+}
+
+.explore p {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.contentHalf img {
+	width: 100%;
+}
+
+.galleryItem {
+	width: 100%;
+}
+
+
+.contentHalf p {
+	text-align: center;
+	padding-top: 0;
+}
+
+.contentHalf h2 {
+	margin-top: 40px;
+}
+
+.inspiration3 {
+	background-image: url(../images/cliff_view.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 400px;
+	width: 100%;
+	padding-top: 50px;
+}
+
+.aside3 {
+	font-size: 28px;*/
+
+}
+
+.aside3 h1  {
+	text-shadow: 2px 2px 4px #000000;
+	text-transform: none;
+	padding: 30px;
+	text-align: center;
+	color: white;
+	font-family: 'Homemade Apple', cursive;
+}
+
+footer {
+	background-image: url(../images/northern-lights.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+/*	padding-top: 30px;*/
+}
+
+/*.footer {
+	display: flex;
+}*/
+
+.half {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: center;
+/*	padding: 30px;*/
+}
+
+.half p {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	padding-top: 20px;
+	text-align: center;
+/*	padding-bottom: 80px;*/
+}
+
+.half h2 {
+	padding-top: 50px;
+	margin-top: 0;
+}
+
+.half .headerCTA2 {
+	text-shadow: none;
+}
+
+.gallery {
+	margin-right: 50px;
+	padding-top: 40px;
+/*	padding-bottom: 40px;*/
+}
+
+.pulse {
+	animation: ease-in;
+}
+
+.contactForm {
+	border: 2px solid black;
+	padding: 10px;
+	background:rgba(255,255,255,0.5);
+}
+
+label {
+	color: black;
+	text-shadow: none;
+	font-weight: bold;
+}
+
+.bottom {
+/*background-color: rgba(1,1,1,0.5);*/
+	width: 100%;
+	position: static;
+	bottom: 0;
+	padding-bottom: 20px;*/
+}
+
+.bottom p {
+	margin-bottom: 0;
+	padding-bottom: 50px;
+	text-shadow: none;
+}
+
+input#toggle {
+  display: none; /* hide the input, we don't need to see it */
+}
+
+label[for="toggle"] {
+	display: none;
+	  }
+
+	/*google map styling*/
+
+	#main-map {
+	    height:400px;
+	    width:550px;
+	}
+	.gm-style-iw * {
+	    display: block;
+	    width: 100%;
+	}
+	.gm-style-iw h4, .gm-style-iw p {
+	    margin: 0;
+	    padding: 0;
+	}
+	.gm-style-iw a {
+	    color: #4272db;
+	}
+
+	/*.footer {
+		display: flex;
+		flex: wrap;
+		justify-content: space-between;
+		border-top: 2px solid black;
+	}
+
+	.map {
+		width: 50%;
+	}*/
+
+/*INTERIOR PAGES*/
+
+.banner {
+	background-image: url(../images/Megan-on-beach.JPG);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	margin-top: 50px;
+
+}
+
+.banner h1 {
+	padding: 100px;
+}
+
+.nav2 {
+	position: fixed;
+	top: 0;
+
+}
+
+
+
+/*LARGE RESPONSIVE*/
+@media (max-width: 843px) {
+	
+	aside {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	aside p {
+		margin: 0 auto;
+	}
+
+	aside img {
+		width: 100%;
+
+	}
+
+	.galleryItem {
+		width: 100%;
+	}
+
+	.exploreContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.contentHalf {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+	nav {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+ label[for="toggle"] {
+	display: none;
+	}
+
+.contentHalf {
+		padding-top: 0px;
+		padding-right: 0px;
+		margin: 0 auto;
+	}
+
+.gallery {
+	width: 100%;
+	padding-top: 0;
+}
+
+.video {
+	padding-top: 40px;
+}
+
+h2#explore {
+	margin-top: 0px;
+}
+
+.homeHeader {
+	min-height: 50vh;
+}
+
+	}
+
+
+/*MEDIUM RESPONSIVE*/
+
+
+	@media (max-width: 677px) {
+		
+	.Homeheader {
+		padding-top: 0;
+		margin-bottom: 100px;
+	}
+
+	.flexContainer {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		background-color: rgba(1,1,1,0.5);
+		position: fixed;
+		top: -275px;
+		transition: top 0.5s ease-in-out;
+		padding-top: 20px;
+	}
+
+	.gallery {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			padding-top: 0;
+			margin-right: 0;
+		}
+
+		h2#explore {
+			margin-top: 0px;
+		}
+
+	
+
+	input#toggle:checked + .flexContainer {
+	  position: fixed;
+	  top: 8px;
+	  transition: top 0.5s ease-in-out;
+	 }
+
+	 label[for="toggle"] {
+    color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: block;
+    font-size: 24px;
+    z-index: 2;
+    background-color: rgba(1,1,1,0.5);
+    width: 100%;
+    margin-top: 0;
+    padding-left: 10px;
+  }
+
+
+	ul {
+		padding: 0;
+		width: 100%;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.flexContainer li {
+		padding: 10px;
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.flexContainer .col1:hover {
+		background-color: rgba(190, 85, 67, 0.4)
+	}
+
+	.flexContainer .col2:hover {
+		background-color: rgba(188, 165, 168, 0.5)
+	}
+
+	.flexContainer .col3:hover {
+		background-color: rgba(190, 197, 163, 0.5)
+	}
+
+	.flexContainer .col4:hover {
+		background-color: rgba(255, 146, 136, 0.5)
+	}
+
+	.flexContainer .col5:hover {
+		background-color: rgba(253, 224, 178, 0.5)
+	}
+
+	.flexContainer .col6:hover {
+		background-color: rgba(142, 153, 154, 0.5)
+	}
+	}
+
+	/*SMALL RESPONSIVE*/
+
+	@media (max-width: 493px) {
+		
+		.headerCenter {
+			padding-top: 50px;
+			padding-bottom: 10px;
+			margin: 0 auto;
+		}
+
+		.headerCenter p {
+			padding: 0px;
+		}
+
+		.headerCenter h1 {
+			margin-top: 20px;
+		}
+
+/*		.headerCTA2 h3 {
+			margin-top: 0;
+		}*/
+
+		.homeHeader {
+			padding-bottom: 20px;
+		}
+
+		.gallery {
+			width: 100%;
+			height: 100%;
+			padding-top: 0;
+		}
+
+		.contentHalf {
+			padding-top: 0;
+		}
+
+		.exploreContainer {
+			padding-top: 30px;
+			padding-bottom: 0;
+		}
+
+		h2#explore {
+			margin-top: 0;
+		}
+
+		.bottom {
+			padding-bottom: 20px;
+		}
+
+		.inspiration h1 {
+			padding-left: 10px;
+			margin: 0;
+			margin-top: 40px;
+
+		}
+
+		.inspiration2 h1 {
+			padding-right: 30px;
+			text-align: center;
+
+		}
+		
+	}

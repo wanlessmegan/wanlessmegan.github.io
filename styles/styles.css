@@ -342,6 +342,7 @@ footer {
 	display: flex;
 }*/
 
+
 .half {
 	color: white;
 	text-shadow: 2px 2px 4px #000000;
@@ -641,6 +642,7 @@ h2#explore {
 		}
 
 		.headerCenter p {
+			font-size: 20px;
 			padding: 0px;
 		}
 
